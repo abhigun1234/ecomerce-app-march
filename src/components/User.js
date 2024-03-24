@@ -7,15 +7,15 @@ class User extends Component {
         this.state={users:[]}
     }
     render() {
+        const { users } = this.state.users
         return (
             <div>
-                {/* Users
-               {
-                this.state.users.data.map(user=>{
-
-                    return <h1>{user.email}</h1>
-                })
-               } */}
+                  {   users.data.length ?
+          users.data.map(user => 
+           
+            <div>{user.email}</div>
+          ):"data loading"
+        }
                data
             </div>
         );
