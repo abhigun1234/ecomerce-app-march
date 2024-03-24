@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from './Header';
 import ProdouctList from './ProdouctList';
+import User from './User';
 
 
 function DashBoard(props) {
@@ -9,7 +10,8 @@ function DashBoard(props) {
     return (
         <div>
             <Header></Header>
-            <ProdouctList></ProdouctList>
+            <User></User>
+            {/* <ProdouctList></ProdouctList> */}
         </div>
     );
 }
