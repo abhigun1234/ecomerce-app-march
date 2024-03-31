@@ -13,6 +13,7 @@ import AddNewProduct from './components/AddNewProduct';
 import NoPage from './components/NoPage';
 import AboutUs from './components/AboutUs';
 import Login from './components/Login';
+import Register from './components/Register';
 function App() {
   return (
     <div className="App">
@@ -30,7 +31,7 @@ function App() {
             <BrowserRouter>
             <Header></Header>
             <Routes>
-              <Route  path='/' element={<Login/>}   />
+              <Route  path='/' element={<AddNewProduct/>}   />
         
               <Route path='/about' element={<AboutUs/>}></Route>
               <Route path='/list' element={<ProdouctList/>}></Route>
