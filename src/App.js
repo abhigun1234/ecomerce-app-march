@@ -19,6 +19,7 @@ import React from 'react';
 //import AboutUs from './components/AboutUs';
 //import AboutUs from './components/AboutUs';
 import ProductTable from './components/ProductTable';
+import ProductDataTable from './components/ProductDataTable'
 import Customer from './components/Customer'
 const LazyAbout=React.lazy(()=>import ('./components/AboutUs'))
 
@@ -39,7 +40,7 @@ function App() {
             <BrowserRouter>
             <Header></Header>
             <Routes>
-              <Route  path='/' element={<Customer></Customer>}   />
+              <Route  path='/' element={<ProductDataTable></ProductDataTable>}   />
              
              
               {/* <Route path='/about' element={
