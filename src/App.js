@@ -12,8 +12,16 @@ import Header from './components/Header'
 import AddNewProduct from './components/AddNewProduct';
 import NoPage from './components/NoPage';
 import AboutUs from './components/AboutUs';
+
 import Login from './components/Login';
 import Register from './components/Register';
+import React from 'react';
+//import AboutUs from './components/AboutUs';
+//import AboutUs from './components/AboutUs';
+import ProductTable from './components/ProductTable';
+import Customer from './components/Customer'
+const LazyAbout=React.lazy(()=>import ('./components/AboutUs'))
+
 function App() {
   return (
     <div className="App">
@@ -31,9 +39,23 @@ function App() {
             <BrowserRouter>
             <Header></Header>
             <Routes>
-              <Route  path='/' element={<AddNewProduct/>}   />
-        
-              <Route path='/about' element={<AboutUs/>}></Route>
+              <Route  path='/' element={<Customer></Customer>}   />
+             
+             
+              {/* <Route path='/about' element={
+              
+              <React.Suspense fallback='Loading'>
+                <LazyAbout/>
+              </React.Suspense>
+              
+              
+              }></Route> */}
+              {/* <Route path='/about' element={<AboutUs></AboutUs>}></Route> */}
+              <Route path='/' element={<React.Suspense  fallback='Loding'>
+                <LazyAbout></LazyAbout>
+              </React.Suspense>}>
+
+              </Route>
               <Route path='/list' element={<ProdouctList/>}></Route>
               <Route path='*' element={<NoPage/>}></Route>
             </Routes>
