@@ -22,6 +22,8 @@ import ProductTable from './components/ProductTable';
 import ProductDataTable from './components/ProductDataTable'
 import Customer from './components/Customer'
 import UserData from './stories/UserData';
+import FetchProduct from './components/FetchProduct';
+import ProductForm from './components/ProductForm';
  //const LazyAbout=React.lazy(()=>import ('./components/AboutUs'))
 
 function App() {
@@ -58,7 +60,8 @@ function App() {
               </React.Suspense>}>
 
               </Route>  */}
-              <Route path='/list' element={<ProdouctList/>}></Route>
+              <Route path='/list' element={<FetchProduct/>}></Route>
+              <Route path='/addproduct' element={<ProductForm/>}></Route>
               <Route path='*' element={<NoPage/>}></Route>
             </Routes>
             </BrowserRouter>

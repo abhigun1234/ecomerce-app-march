@@ -16,6 +16,10 @@ function Header(props) {
           <Link to='/list'> <a class="nav-link active" aria-current="page" href="#">Products</a></Link>
          
         </li>
+          <li class="nav-item">
+          <Link to='/addproduct'> <a class="nav-link active" aria-current="page" href="#">AddProducts</a></Link>
+         
+        </li>
         <li class="nav-item">
           
           <Link to='/about'><a class="nav-link" href="#">About Us</a></Link>
