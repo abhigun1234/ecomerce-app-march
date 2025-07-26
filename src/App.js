@@ -24,6 +24,7 @@ import Customer from './components/Customer'
 import UserData from './stories/UserData';
 import FetchProduct from './components/FetchProduct';
 import ProductForm from './components/ProductForm';
+import ProductDataNew from './components/ProductDataNew';
  //const LazyAbout=React.lazy(()=>import ('./components/AboutUs'))
 
 function App() {
@@ -43,7 +44,7 @@ function App() {
             <BrowserRouter>
             <Header></Header>
             <Routes>
-              <Route  path='/' element={<UserData></UserData>}   />
+              <Route  path='/' element={<ProductDataNew></ProductDataNew>}   />
              
              
               {/* <Route path='/about' element={
