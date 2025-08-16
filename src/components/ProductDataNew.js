@@ -18,7 +18,7 @@ function ProductDataNew(props) {
     return (
         <div>
             {
-
+            
             }
         </div>
     );
