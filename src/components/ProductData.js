@@ -7,6 +7,7 @@ class ProductData extends Component {
      this.state={productData:[]}
 
     }
+    //
     componentDidMount(){
 
         axios.get('https://fakestoreapi.com/products').then(res=>{
